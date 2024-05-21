@@ -1,0 +1,1 @@
+chrome-extension://fgngodlaekdlibajobmkaklibdggemdd/read/content.js
