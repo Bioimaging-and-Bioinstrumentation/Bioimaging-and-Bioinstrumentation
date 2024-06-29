@@ -85,6 +85,10 @@
         .footer-links a:hover {
             text-decoration: underline;
         }
+                .lectures-container {
+            margin-top: 1px; /* Adjust the value as needed */
+        }
+
     </style>
 
     <!-- Lightbox JavaScript -->
@@ -157,20 +161,21 @@
 
 
 
-<!-- Carousel -->
-<div id="carousel" class="carousel slide" data-ride="carousel" data-interval="2500" data-pause="hover">
-    <!-- Menu -->
-    <ol class="carousel-indicators">
-        <li data-target="#carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel" data-slide-to="1"></li>
-        <li data-target="#carousel" data-slide-to="2"></li>
-        <li data-target="#carousel" data-slide-to="3"></li>
-    </ol>
 
-                <!-- Items -->
-                    <div class="carousel-inner">
+
+                <!-- Carousel -->
+                <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="2500" data-pause="hover">
+                    <!-- Menu -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                        <li data-target="#carousel" data-slide-to="3"></li>
+                    </ol>
+
+                <div class="carousel-inner">
                         <div class="item active">
-                            <a href="#>
+                            <a href="#">
                                 <img src="images/p1.png" alt="Slide 1" />
                             </a>
                         </div>
@@ -199,10 +204,9 @@
                 </div>
 
 
+               
 
-
-                
-                <div class="well" id="lectures">
+                <div class="well lectures-container" id="lectures">
                     <h2>Lectures</h2>
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                         <!-- Lecture 1 -->
