@@ -16,7 +16,7 @@
 
     <style>
         body {
-            padding-top: 70px; /* Add padding to avoid overlap with navbar */
+            padding-top: 70px;
             padding-left: 200px;
             padding-right: 200px;
             font-family: Arial, sans-serif;
@@ -26,47 +26,42 @@
 
         .navbar {
             margin-bottom: 20px;
+            padding-left: 200px;
+            padding-right: 50px;
+            background-color: #f8f8f8;
+            border-color: #e7e7e7;
         }
 
-        .navbar {
-        padding-left: 200px;
-        padding-right: 50px;
-        background-color: #f8f8f8;
-        border-color: #e7e7e7;
-    }
+        .navbar-brand {
+            color: #5a5a5a !important;
+        }
 
-    .navbar-brand {
-        color: #5a5a5a !important;
-    }
+        .navbar-nav > li > a {
+            color: #5a5a5a !important;
+        }
 
-    .navbar-nav > li > a {
-        color: #5a5a5a !important;
-    }
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: #5a5a5a;
+        }
 
-    .navbar-default .navbar-toggle .icon-bar {
-        background-color: #5a5a5a;
-    }
-
-    .navbar-collapse {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+        .navbar-collapse {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
 
         .well {
             background-color: #ffffff;
             border: 1px solid #dddddd;
             padding: 20px;
             margin-bottom: 20px;
-            text-align: justify; /* Justify the text */
-
+            text-align: justify;
         }
 
         .carousel-inner>.item>img {
             width: 100%;
             height: auto;
-            max-height: 200px; /* Adjust this value to make the carousel smaller */
+            max-height: 200px;
         }
-
 
         footer {
             background-color: #343a40;
@@ -85,10 +80,10 @@
         .footer-links a:hover {
             text-decoration: underline;
         }
-        .lectures-container {
-            margin-top: 20px; /* Adjust the value as needed */
-        }
 
+        .lectures-container {
+            margin-top: 20px;
+        }
     </style>
 
     <!-- Lightbox JavaScript -->
@@ -148,20 +143,13 @@
         </div>
     </div>
 
-
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-8">
-
                 <div class="well" id="description">
                     <h2>Course Description</h2>
                     <p>This course serves as an introduction to biomedical instrumentation and imaging with a focus on the acquisition and monitoring of vital signals. Basic principles for the selection and appropriate use of instruments for solving bioengineering and medical problems such as microscopy, magnetic resonance imaging, and ultrasounds, among others, are addressed.</p>
                 </div>
-
-
-
-
-
 
                 <!-- Carousel -->
                 <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="2500" data-pause="hover">
@@ -173,28 +161,25 @@
                         <li data-target="#carousel" data-slide-to="3"></li>
                     </ol>
 
-                <div class="carousel-inner">
+                    <div class="carousel-inner">
                         <div class="item active">
                             <a href="#">
                                 <img src="images/p1.png" alt="Slide 1" />
                             </a>
                         </div>
 
-                        <!-- Second Slide -->
                         <div class="item">
                             <a href="#">
                                 <img src="images/p2.png" alt="Slide 2" />
                             </a>
                         </div>
 
-                        <!-- Third Slide -->
                         <div class="item">
                             <a href="#">
                                 <img src="images/p3.png" alt="Slide 3" />
                             </a>
                         </div>
 
-                        <!-- Fourth Slide -->
                         <div class="item">
                             <a href="#">
                                 <img src="images/p4.png" alt="Slide 4" />
@@ -203,32 +188,40 @@
                     </div>
                 </div>
 
-
-               
-
                 <div class="well lectures-container" id="lectures">
-                    <h2>Lectures</h2>
-                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                        <!-- Lecture 1 -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingOne">
-                                <h4 class="panel-title">
-                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Lecture 1 - Introduction
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
-                                <div class="panel-body">
-                                    <p><a href="assets/mile-01-intro.pptx" target="_blank">PPT</a></p>
-                                    <p><a href="https://youtu.be/bZ42HZ3cQYs" target="_blank">Video</a></p>
-                                    <p><a href="#" target="_blank">HW</a></p>
-                                    <p><a href="video_script/Introduction.pdf" target="_blank"> Transcript</a></p>
-                                    <p><a href="https://share.synthesia.io/a1020204-3ac5-4b5f-9003-3d844655c647" target="_blank"> Avatar</a></p>
-                                </div>
-                            </div>
+    <h2>Lectures</h2>
+    <!-- Tabs for filtering lectures -->
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#undergraduateTab">Undergraduate</a></li>
+        <li><a data-toggle="tab" href="#graduateTab">Graduate</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <!-- Undergraduate Lectures -->
+        <div id="undergraduateTab" class="tab-pane fade in active">
+            <div class="panel-group" id="accordionUndergraduate" role="tablist" aria-multiselectable="true">
+                <!-- Undergraduate Lecture 1 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="undergraduateHeadingOne">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordionUndergraduate" href="#undergraduateCollapseOne" aria-expanded="true" aria-controls="undergraduateCollapseOne">
+                                Lecture 1 - Introduction (Undergraduate)
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="undergraduateCollapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="undergraduateHeadingOne">
+                        <div class="panel-body">
+                            <p><a href="assets/mile-01-intro.pptx" target="_blank">PPT</a></p>
+                            <p><a href="https://youtu.be/bZ42HZ3cQYs" target="_blank">Video</a></p>
+                            <p><a href="#" target="_blank">HW</a></p>
+                            <p><a href="video_script/Introduction.pdf" target="_blank">Transcript</a></p>
+                            <p><a href="https://share.synthesia.io/a1020204-3ac5-4b5f-9003-3d844655c647" target="_blank">Avatar</a></p>
                         </div>
-                        <!-- Lecture 2 -->
+                    </div>
+                </div>
+
+                <!-- Additional undergraduate lectures can be added here -->
+ <!-- Lecture 2 -->
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingTwo">
                                 <h4 class="panel-title">
@@ -689,56 +682,61 @@
                                 </div>
                             </div>
                         </div>
+
+
+            </div>
+        </div>
+
+        <!-- Graduate Lectures -->
+        <div id="graduateTab" class="tab-pane fade">
+            <div class="panel-group" id="accordionGraduate" role="tablist" aria-multiselectable="true">
+                <!-- Graduate Lecture 24 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="graduateHeadingTwentyFour">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGraduate" href="#graduateCollapseTwentyFour" aria-expanded="false" aria-controls="graduateCollapseTwentyFour">
+                                Lecture 01 - Medical Imaging with Machine Intelligence (Graduate)
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="graduateCollapseTwentyFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="graduateHeadingTwentyFour">
+                        <div class="panel-body">
+                            <p><a href="graduate_slides/F24-01-Intro.pptx" target="_blank">PPT</a></p>
+                            <p><a href="#" target="_blank">Video</a></p>
+                            <p><a href="#" target="_blank">HW</a></p>
+                            <p><a href="#" target="_blank">Transcript</a></p>
+                        </div>
                     </div>
                 </div>
-                
+
+                <!-- Additional graduate lectures can be added here -->
             </div>
-
-
-
-
-<div class="col-sm-4">
-    <div class="well" id="syllabus">
-        <h4 style="color: black;">Syllabus</h4>
-        <p style="color: blue;">-<a href="assets/01-bmed2300-2-syllabus-s18.doc" target="_blank"> Syllabus</a></p>
-    </div>
-
-    <div class="well" id="book">
-        <h4 style="color: black;">Book Draft</h4>
-        <p style="color: blue;">-<a href="assets/mile-v2-031818.pdf" target="_blank"> Current Book Draft</a></p>
-        <p>Send any feedback on the book using the Feedback section.</p>
-    </div>
-
-    <div class="well" id="feedback">
-        <h4 style="color: black;">Feedback</h4>
-        <p style="color: blue;">-<a href="http://www.fully3d.org/rpi/discussion-and-feedback.html" target="_blank"> Feedback Form</a></p>
-    </div>
-
-    <div class="well" id="matlab">
-        <h4 style="color: black;">MATLAB</h4>
-        <p style="color: blue;">-<a href="https://www.mathworks.com/products/matlab.html" target="_blank"> MATLAB Homepage</a></p>
-        <p style="color: blue;">-<a href="https://www.mathworks.com/training-schedule/matlab-onramp.html" target="_blank"> MATLAB Onramp</a></p>
-    </div>
-
-    <div class="well" id="links">
-        <h4 style="color: black;">Other Links</h4>
-        <p style="color: blue;">-<a href="http://bme.rpi.edu/" target="_blank"> Main RPI BME Page</a></p>
-        <p style="color: blue;">-<a href="http://biotech.rpi.edu/centers/bic/people/faculty/ge-wang" target="_blank"> Link to Ge's Site</a></p>
+        </div>
     </div>
 </div>
 
-            
-
-
-
-
-        </div>
-    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <script>
+        function showLectures(level) {
+            const undergradLectures = document.querySelectorAll('.undergraduate');
+            const gradLectures = document.querySelectorAll('.graduate');
+
+            if (level === 'undergraduate') {
+                undergradLectures.forEach(lecture => lecture.style.display = 'block');
+                gradLectures.forEach(lecture => lecture.style.display = 'none');
+            } else if (level === 'graduate') {
+                undergradLectures.forEach(lecture => lecture.style.display = 'none');
+                gradLectures.forEach(lecture => lecture.style.display = 'block');
+            }
+        }
+
+        // Default to showing undergraduate lectures
+        showLectures('undergraduate');
+    </script>
 </body>
 
 </html>
