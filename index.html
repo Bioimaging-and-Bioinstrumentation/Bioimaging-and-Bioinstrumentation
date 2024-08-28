@@ -16,11 +16,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
 
     <style>
-
-              body {
+        body {
             padding-top: 70px;
-            padding-left: 200px;
-            padding-right: 200px;
             font-family: Arial, sans-serif;
             background-color: #f9f9f9;
             color: #333;
@@ -94,6 +91,9 @@
             } else {
                 console.error("Lightbox is not defined.");
             }
+
+            // Show only undergraduate lectures by default
+            showLectures('undergraduate');
         };
     </script>
 
@@ -138,9 +138,9 @@
         </div>
     </nav>
 
-   <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <div class="col-sm-8">
+            <div class="col-md-8">
                 <div class="well" id="description">
                     <h2>Course Description</h2>
                     <p>This course serves as an introduction to biomedical instrumentation and imaging with a focus on the acquisition and monitoring of vital signals. Basic principles for the selection and appropriate use of instruments for solving bioengineering and medical problems such as microscopy, magnetic resonance imaging, and ultrasounds, among others, are addressed.</p>
@@ -191,13 +191,11 @@
 
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                         <!-- Undergraduate Lecture 1 -->
-                       
-                   <div class="panel panel-default undergraduate">
-                           
-                  <div class="panel-heading" role="tab" id="headingOne">
+                        <div class="panel panel-default undergraduate">
+                            <div class="panel-heading" role="tab" id="headingOne">
                                 <h4 class="panel-title">
                                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Lecture 1 - Introduction 
+                                        Lecture 1 - Introduction
                                     </a>
                                 </h4>
                             </div>
@@ -210,847 +208,27 @@
                                     <p><a href="https://share.synthesia.io/a1020204-3ac5-4b5f-9003-3d844655c647" target="_blank">Avatar</a></p>
                                 </div>
                             </div>
-
-
-                        <!-- Additional lectures can be added here -->
-
-
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingTwo">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Lecture 2 - MatLab I (Basics)
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                <div class="panel-body">
-                                    <p><a href="assets/mile-02-matlab1.pptx" target="_blank">PPT</a></p>
-                                    <p><a href="https://youtu.be/ZT-31Yov8OQ" target="_blank">Video</a></p>
-                                    <p><a href="#" target="_blank">HW</a></p>
-                                    <p><a href="video_script/MatLab I.pdf" target="_blank"> Transcript</a></p>
-                                    <p><a href="https://share.synthesia.io/9e24fe99-e4de-4d0d-b185-11838d81feb9" target="_blank"> Avatar</a></p>
-                                </div>
-                            </div>
                         </div>
-                        <!-- Lecture 3 -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingThree">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Lecture 3 - System
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                <div class="panel-body">
-                                    <p><a href="assets/mile-03-system.pptx" target="_blank">PPT</a></p>
-                                    <p><a href="https://youtu.be/ZaoumhPf9U8" target="_blank">Video</a></p>
-                                    <p><a href="#" target="_blank">HW</a></p>
-                                    <p><a href="video_script/System.pdf" target="_blank"> Transcript</a></p>
-                                    <p><a href="https://share.synthesia.io/a182077e-dceb-4c7f-97e0-be445485a052" target="_blank"> Avatar</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Lecture 4 -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingFour">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        Lecture 4 - Convolution
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                <div class="panel-body">
-                                    <p><a href="assets/mile-04-convolution.pptx" target="_blank">PPT</a></p>
-                                    <p><a href="https://youtu.be/rIBp6RbznlM" target="_blank">Video</a></p>
-                                    <p><a href="#" target="_blank">HW</a></p>
-                                    <p><a href="video_script/Convolution.pdf" target="_blank"> Transcript</a></p>
-                                    <p><a href="https://share.synthesia.io/5760656d-103c-4f18-a657-7467881fbce5" target="_blank"> Avatar</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Lecture 5 -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingFive">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                        Lecture 5 - Fourier Series
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                                <div class="panel-body">
-                                    <p><a href="assets/mile-05-fourierseries.pptx" target="_blank">PPT</a></p>
-                                    <p><a href="https://youtu.be/VQAd0Hp4CaY" target="_blank">Video</a></p>
-                                    <p><a href="#" target="_blank">HW</a></p>
-                                    <p><a href="video_script/Fourier Series.pdf" target="_blank"> Transcript</a></p>
-                                    <p><a href="https://share.synthesia.io/edcb1c0c-904c-4ae8-92c0-8050f8a3f7f8" target="_blank"> Avatar</a></p>
-
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Lecture 6 -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingSix">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                        Lecture 6 - Fourier Transform
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-                                <div class="panel-body">
-                                    <p><a href="assets/mile-06-fouriertransform.pptx" target="_blank">PPT</a></p>
-                                    <p><a href="https://youtu.be/ZTLCKK-pZb8" target="_blank">Video</a></p>
-                                    <p><a href="#" target="_blank">HW</a></p>
-                                    <p><a href="video_script/Fourier Transform.pdf" target="_blank"> Transcript</a></p>
-                                    <p><a href="https://share.synthesia.io/77508075-9dec-4a1a-8954-e4830aa6bb21" target="_blank"> Avatar</a></p>
-
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Lecture 7 -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingSeven">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                        Lecture 7 - Signal Processing
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
-                                <div class="panel-body">
-                                    <p><a href="assets/mile-07-signalprocessing.pptx" target="_blank">PPT</a></p>
-                                    <p><a href="https://youtu.be/z0XDEkCzjrs" target="_blank">Video</a></p>
-                                    <p><a href="#" target="_blank">HW</a></p>
-                                    <p><a href="video_script/Signal Processing.pdf" target="_blank"> Transcript</a></p>
-                                    <p><a href="https://share.synthesia.io/eea7d105-7d2c-43ab-abf7-b5d0e09dab69" target="_blank"> Avatar</a></p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Lecture 8 -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingEight">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                        Lecture 8 - Discrete FT & FFT
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
-                                <div class="panel-body">
-                                    <p><a href="assets/mile-08-dft-fft.pptx" target="_blank">PPT</a></p>
-                                    <p><a href="https://youtu.be/XX37aqpp0_c" target="_blank">Video</a></p>
-                                    <p><a href="#" target="_blank">HW</a></p>
-                                    <p><a href="video_script/FT & FTT.pdf" target="_blank"> Transcript</a></p>
-                                    <p><a href="https://share.synthesia.io/cb11442b-d179-48bb-af96-adc28c7a859e" target="_blank"> Avatar</a></p>  
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Lecture 9 -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingNine">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                                        Lecture 9 - MatLab II (Homework)
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
-                                <div class="panel-body">
-                                    <p><a href="assets/mile-09-matlab2.pptx" target="_blank">PPT</a></p>
-                                    <p><a href="https://youtu.be/VdNReLdC1Io" target="_blank">Video</a></p>
-                                    <p><a href="#" target="_blank">HW</a></p>
-                                    <p><a href="video_script/MatLab II.pdf" target="_blank"> Transcript</a></p>
-                                    <p><a href="https://share.synthesia.io/43aa9de2-ed31-43c7-9f28-487096a9cdc3" target="_blank"> Avatar</a></p>
-
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Lecture 10 -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingTen">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                                        Lecture 10 - Network
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
-                                <div class="panel-body">
-                                    <p><a href="assets/mile-10-network.pptx" target="_blank">PPT</a></p>
-                                    <p><a href="https://youtu.be/wG3uuu6d_04" target="_blank">Video</a></p>
-                                    <p><a href="#" target="_blank">HW</a></p>
-                                    <p><a href="video_script/Network.pdf" target="_blank"> Transcript</a></p>
-                                    <p><a href="https://share.synthesia.io/b7d9eb8c-07d6-431b-b5bf-6d4014dd1090" target="_blank"> Avatar</a></p>
-
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Lecture 11 -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingEleven">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                                        Lecture 11 - Image Quality
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
-                                <div class="panel-body">
-                                    <p><a href="assets/mile-11-quality.pptx" target="_blank">PPT</a></p>
-                                    <p><a href="https://youtu.be/yzgkrXbosQc" target="_blank">Video</a></p>
-                                    <p><a href="#" target="_blank">HW</a></p>
-                                    <p><a href="video_script/Image Quality.pdf" target="_blank"> Transcript</a></p>
-                                    <p><a href="https://share.synthesia.io/e22f4212-28c1-4da8-88c9-8c8b836887c8" target="_blank"> Avatar</a></p>
-
-
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Lecture 12 -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingTwelve">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-                                        Lecture 12 - X-Ray Physics
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
-                                <div class="panel-body">
-                                    <p><a href="assets/mile-12-x-ray.pptx" target="_blank">PPT</a></p>
-                                    <p><a href="https://youtu.be/8GJPw_0tkdk" target="_blank">Video</a></p>
-                                    <p><a href="#" target="_blank">HW</a></p>
-                                    <p><a href="video_script/X-Ray Physics.pdf" target="_blank"> Transcript</a></p>
-                                    <p><a href="https://share.synthesia.io/b4ff257b-d95d-481d-a4b4-8c42786615e6" target="_blank"> Avatar</a></p>
-
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Lecture 13 -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingThirteen">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
-                                        Lecture 13 - CT Reconstruction
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThirteen">
-                                <div class="panel-body">
-                                    <p><a href="assets/mile-13-recon.pptx" target="_blank">PPT</a></p>
-                                    <p><a href="https://youtu.be/q9ZCvQ1ZqjA" target="_blank">Video</a></p>
-                                    <p><a href="#" target="_blank">HW</a></p>
-                                    <p><a href="video_script/CT Reconstruction.pdf" target="_blank"> Transcript</a></p>
-                                    <p><a href="https://share.synthesia.io/0367d791-8838-4bea-8ba9-2a204a444cce" target="_blank"> Avatar</a></p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Lecture 14 -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingFourteen">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
-                                        Lecture 14 - CT Scanner
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourteen">
-                                <div class="panel-body">
-                                    <p><a href="assets/mile-14-scanner.pptx" target="_blank">PPT</a></p>
-                                    <p><a href="https://youtu.be/P2bZgUyP41c" target="_blank">Video</a></p>
-                                    <p><a href="#" target="_blank">HW</a></p>
-                                    <p><a href="video_script/CT Scanner.pdf" target="_blank"> Transcript</a></p>
-                                    <p><a href="https://share.synthesia.io/d3d6305d-a44b-4250-8f1b-52d88d48348a" target="_blank"> Avatar</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Lecture 15 -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingFifteen">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
-                                        Lecture 15 - MatLab III (CT)
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseFifteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFifteen">
-                                <div class="panel-body">
-                                    <p><a href="assets/bb15-matlabct.pdf" target="_blank">PPT</a></p>
-                                    <p><a href="https://youtu.be/zTDJbbFZuTQ" target="_blank">Video</a></p>
-                                    <p><a href="#" target="_blank">HW</a></p>
-                                    <p><a href="video_script/MatLab III.pdf" target="_blank"> Transcript</a></p>
-                                    <p><a href="https://share.synthesia.io/cf3caea5-8b6a-4fa6-ac44-a2fcde1f00e8" target="_blank"> Avatar</a></p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Lecture 16 -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingSixteen">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
-                                        Lecture 16 - Nuclear Physics
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseSixteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixteen">
-                                <div class="panel-body">
-                                    <p><a href="assets/mile-16-nuclear.pptx" target="_blank">PPT</a></p>
-                                    <p><a href="https://youtu.be/booFmLl9dWw" target="_blank">Video</a></p>
-                                    <p><a href="#" target="_blank">HW</a></p>
-                                    <p><a href="video_script/Nuclear Physics.pdf" target="_blank"> Transcript</a></p>
-                                    <p><a href="https://share.synthesia.io/19c7c010-3ade-4f53-9067-8d9e554f628c" target="_blank"> Avatar</a></p>
-
-                                
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Lecture 17 -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingSeventeen">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
-                                        Lecture 17 - PET & SPECT
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseSeventeen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeventeen">
-                                <div class="panel-body">
-                                    <p><a href="assets/mile-17-spect-pet.pptx" target="_blank">PPT</a></p>
-                                    <p><a href="https://youtu.be/CaL_w_bkwjY" target="_blank">Video</a></p>
-                                    <p><a href="#" target="_blank">HW</a></p>
-                                    <p><a href="video_script/PET & SPECT.pdf" target="_blank"> Transcript</a></p>
-                                    <p><a href="https://share.synthesia.io/3aaad566-f5be-4e1f-8270-4b71f751860d" target="_blank"> Avatar</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Lecture 18 -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingEighteen">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
-                                        Lecture 18 - MRI I
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseEighteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEighteen">
-                                <div class="panel-body">
-                                    <p><a href="assets/bb18-mri-physics.pdf" target="_blank">PPT</a></p>
-                                    <p><a href="https://youtu.be/uJVPkqwhu5Q" target="_blank">Video</a></p>
-                                    <p><a href="#" target="_blank">HW</a></p>
-                                    <p><a href="video_script/MRI I.pdf" target="_blank"> Transcript</a></p>
-                                    <p><a href="https://share.synthesia.io/82605d81-abde-4eac-8234-d04b35fa6bb5" target="_blank"> Avatar</a></p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Lecture 19 -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingNineteen">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
-                                        Lecture 19 - MRI II
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseNineteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNineteen">
-                                <div class="panel-body">
-                                    <p><a href="assets/mile-19-mri-imaging.pptx" target="_blank">PPT</a></p>
-                                    <p><a href="https://youtu.be/BO-5-_G7874" target="_blank">Video</a></p>
-                                    <p><a href="#" target="_blank">HW</a></p>
-                                    <p><a href="video_script/MRI II.pdf" target="_blank"> Transcript</a></p>
-                                    <p><a href="https://share.synthesia.io/002708f7-924b-429d-b1a0-a6db3d59e012" target="_blank"> Avatar</a></p>
-
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Lecture 20 -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingTwenty">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
-                                        Lecture 20 - MRI III
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseTwenty" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwenty">
-                                <div class="panel-body">
-                                    <p><a href="assets/mile-20-mri-pulse-seq.pptx" target="_blank">PPT</a></p>
-                                    <p><a href="https://youtu.be/zTDJbbFZuTQ" target="_blank">Video</a></p>
-                                    <p><a href="#" target="_blank">HW</a></p>
-                                    <p><a href="video_script/MRI III.pdf" target="_blank"> Transcript</a></p>
-                                    <p><a href="https://share.synthesia.io/8a8a18f5-d7da-4c93-be49-624900e15da2" target="_blank"> Avatar</a></p>
-
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Lecture 21 -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingTwentyOne">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyOne" aria-expanded="false" aria-controls="collapseTwentyOne">
-                                        Lecture 21 - US I
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseTwentyOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwentyOne">
-                                <div class="panel-body">
-                                    <p><a href="assets/mile-21-us-principle.pptx" target="_blank">PPT</a></p>
-                                    <p><a href="https://youtu.be/6-UAGLl17L4" target="_blank">Video</a></p>
-                                    <p><a href="#" target="_blank">HW</a></p>
-                                    <p><a href="video_script/US Physics.pdf" target="_blank"> Transcript</a></p>
-                                    <p><a href="https://share.synthesia.io/1ce34d39-1f8e-440d-9263-b9779c776edc" target="_blank"> Avatar</a></p>
-                                   
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Lecture 22 -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingTwentyTwo">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyTwo" aria-expanded="false" aria-controls="collapseTwentyTwo">
-                                        Lecture 22 - US II
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseTwentyTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwentyTwo">
-                                <div class="panel-body">
-                                    <p><a href="assets/mile-22-us-ok.pptx" target="_blank">PPT</a></p>
-                                    <p><a href="https://youtu.be/ACRTw66kANw" target="_blank">Video</a></p>
-                                    <p><a href="#" target="_blank">HW</a></p>
-                                    <p><a href="video_script/US Imaging.pdf" target="_blank"> Transcript</a></p>
-                                    <p><a href="https://share.synthesia.io/245e8142-8304-4d55-8044-0b21571f10eb" target="_blank"> Avatar</a></p>
-
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Lecture 23 -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingTwentyThree">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyThree" aria-expanded="false" aria-controls="#collapseTwentyThree">
-                                        Lecture 23 - Optical Imaging
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseTwentyThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwentyThree">
-                                <div class="panel-body">
-                                    <p><a href="assets/mile-23-optics-ok.pdf" target="_blank">PPT</a></p>
-                                    <p><a href="https://youtu.be/hYY8d0UB6Qo" target="_blank">Video</a></p>
-                                    <p><a href="#" target="_blank">HW</a></p>
-                                    <p><a href="video_script/Optical Imaging.pdf" target="_blank"> Transcript</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Lecture 24 -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingTwentyFour">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyFour" aria-expanded="false" aria-controls="collapseTwentyFour">
-                                        Lecture 24 - Machine Learning
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseTwentyFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwentyFour">
-                                <div class="panel-body">
-                                    <p><a href="assets/mile-24-ml.pptx" target="_blank">PPT</a></p>
-                                    <p><a href="https://youtu.be/oMHBEIFy13I" target="_blank">Video</a></p>
-                                    <p><a href="#" target="_blank">HW</a></p>
-                                    <p><a href="video_script/Machine Learning.pdf" target="_blank"> Transcript</a></p>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-                        </div>
-
-
-
-
 
                         <!-- Graduate Lecture 24 -->
                         <div class="panel panel-default graduate">
-                           
-
-           <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="graduateHeadingOne">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGraduate" href="#graduateCollapseOne" aria-expanded="false" aria-controls="graduateCollapseOne">
-                                Lecture 01 - Medical Imaging with Machine Intelligence 
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="graduateCollapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="graduateHeadingOne">
-                        <div class="panel-body">
-                            <p><a href="graduate_slides/F24-01-Intro.pptx" target="_blank">PPT</a></p>
-                            <p><a href="https://youtu.be/GY7N4UJgNE0" target="_blank">Video</a></p>
-                            <p><a href="#" target="_blank">HW</a></p>
+                            <div class="panel-heading" role="tab" id="graduateHeadingOne">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#graduateCollapseOne" aria-expanded="false" aria-controls="graduateCollapseOne">
+                                        Lecture 01 - Medical Imaging with Machine Intelligence
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="graduateCollapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="graduateHeadingOne">
+                                <div class="panel-body">
+                                    <p><a href="assets/mile-23-MedicalImaging_DeepLearning_AI.pptx" target="_blank">PPT</a></p>
+                                    <p><a href="https://youtu.be/bZ42HZ3cQYs" target="_blank">Video</a></p>
+                                    <p><a href="#" target="_blank">HW</a></p>
+                                    <p><a href="video_script/Introduction.pdf" target="_blank">Transcript</a></p>
+                                    <p><a href="https://share.synthesia.io/a1020204-3ac5-4b5f-9003-3d844655c647" target="_blank">Avatar</a></p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-
-           <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="graduateHeadingTwo">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGraduate" href="#graduateCollapseTwo" aria-expanded="false" aria-controls="graduateCollapseTwo">
-                                Lecture 02 - Neuron, Network & Backpropagation
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="graduateCollapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="graduateHeadingTwo">
-                        <div class="panel-body">
-                            <p><a href="graduate_slides/F21-DR02-Neuron.pptx" target="_blank">PPT</a></p>
-                            <p><a href="https://youtu.be/-zVkKE1biuI" target="_blank">Video</a></p>
-                            <p><a href="#" target="_blank">HW</a></p>
-                        </div>
-                    </div>
-                </div>
-
-        
-
- 
-
-
-         <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="graduateHeadingThree">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGraduate" href="#graduateCollapseThree" aria-expanded="false" aria-controls="graduateCollapseThree">
-                                Lecture 03 - Hands-on 1: Python, Colab, & TensorF
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="graduateCollapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="graduateHeadingThree">
-                        <div class="panel-body">
-                            <p><a href="graduate_slides/F21-DR03-Platform.pptx" target="_blank">PPT</a></p>
-                            <p><a href="https://youtu.be/8RXX03WW1t8" target="_blank">Video</a></p>
-                            <p><a href="#" target="_blank">HW</a></p>
-                        </div>
-                    </div>
-                </div>
-
-
-        <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="graduateHeadingFour">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGraduate" href="#graduateCollapseFour" aria-expanded="false" aria-controls="graduateCollapseFour">
-                                Lecture 04 - Network Architectures
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="graduateCollapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="graduateHeadingFour">
-                        <div class="panel-body">
-                            <p><a href="graduate_slides/F21-DR04-Architecture.pptx" target="_blank">PPT</a></p>
-                            <p><a href="https://youtu.be/nfTBpWYSrbg" target="_blank">Video</a></p>
-                            <p><a href="#" target="_blank">HW</a></p>
-                        </div>
-                    </div>
-                </div>
-
-
-
-      <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="graduateHeadingFive">
-        <h4 class="panel-title">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGraduate" href="#graduateCollapseFive" aria-expanded="false" aria-controls="graduateCollapseFive">
-                Lecture 05 - Minds-on & Hands-on MNIST
-
-            </a>
-        </h4>
-    </div>
-    <div id="graduateCollapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="graduateHeadingFive">
-        <div class="panel-body">
-            <p><a href="graduate_slides/F21-DR05-Minds-Hands-on.pptx" target="_blank">PPT</a></p>
-            <p><a href="https://youtu.be/Tw7-IytndIA" target="_blank">Video</a></p>
-            <p><a href="#" target="_blank">HW</a></p>
-        </div>
-    </div>
-</div>
-
-<div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="graduateHeadingSix">
-        <h4 class="panel-title">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGraduate" href="#graduateCollapseSix" aria-expanded="false" aria-controls="graduateCollapseSix">
-                Lecture 06 - Image Quality I: Resolution, Noise, & SSIM
-
-            </a>
-        </h4>
-    </div>
-    <div id="graduateCollapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="graduateHeadingSix">
-        <div class="panel-body">
-            <p><a href="graduate_slides/F21-DR06-Quality-I.pptx" target="_blank">PPT</a></p>
-            <p><a href="https://youtu.be/pbmcFcKsV-I" target="_blank">Video</a></p>
-            <p><a href="#" target="_blank">HW</a></p>
-        </div>
-    </div>
-</div>
-
-<div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="graduateHeadingSeven">
-        <h4 class="panel-title">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGraduate" href="#graduateCollapseSeven" aria-expanded="false" aria-controls="graduateCollapseSeven">
-                Lecture 07 - CT Physics
-            </a>
-        </h4>
-    </div>
-    <div id="graduateCollapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="graduateHeadingSeven">
-        <div class="panel-body">
-            <p><a href="graduate_slides/F21-DR07-CT-Physics.pptx" target="_blank">PPT</a></p>
-            <p><a href="https://youtu.be/81az5BbSNuA" target="_blank">Video</a></p>
-            <p><a href="#" target="_blank">HW</a></p>
-        </div>
-    </div>
-</div>
-
-<div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="graduateHeadingEight">
-        <h4 class="panel-title">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGraduate" href="#graduateCollapseEight" aria-expanded="false" aria-controls="graduateCollapseEight">
-                Lecture 08 - CT Image Reconstruction
-            </a>
-        </h4>
-    </div>
-    <div id="graduateCollapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="graduateHeadingEight">
-        <div class="panel-body">
-            <p><a href="graduate_slides/F21-DR08-CT-Recon.pptx" target="_blank">PPT</a></p>
-            <p><a href="https://youtu.be/XZ2JCcUZGGw" target="_blank">Video</a></p>
-            <p><a href="#" target="_blank">HW</a></p>
-        </div>
-    </div>
-</div>
-
-<div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="graduateHeadingNine">
-        <h4 class="panel-title">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGraduate" href="#graduateCollapseNine" aria-expanded="false" aria-controls="graduateCollapseNine">
-                Lecture 09 - Deep CT Reconstruction
-            </a>
-        </h4>
-    </div>
-    <div id="graduateCollapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="graduateHeadingNine">
-        <div class="panel-body">
-            <p><a href="graduate_slides/F21-DR09-Deep-CT.pptx" target="_blank">PPT</a></p>
-            <p><a href="https://youtu.be/uoGL6m1YE3Y" target="_blank">Video</a></p>
-            <p><a href="#" target="_blank">HW</a></p>
-        </div>
-    </div>
-</div>
-
-
-<div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="graduateHeadingTen">
-        <h4 class="panel-title">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGraduate" href="#graduateCollapseTen" aria-expanded="false" aria-controls="graduateCollapseTen">
-                Lecture 10 - Deep CT Recon & Hands-on 3
-            </a>
-        </h4>
-    </div>
-    <div id="graduateCollapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="graduateHeadingTen">
-        <div class="panel-body">
-            <p><a href="graduate_slides/F21-DR10-Deep-CT-Hands-on3.pptx" target="_blank">PPT</a></p>
-            <p><a href="https://youtu.be/ywcvbA3FVzQ" target="_blank">Video</a></p>
-            <p><a href="#" target="_blank">HW</a></p>
-        </div>
-    </div>
-</div>
-
-
-<div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="graduateHeadingEleven">
-        <h4 class="panel-title">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGraduate" href="#graduateCollapseEleven" aria-expanded="false" aria-controls="graduateCollapseEleven">
-                Lecture 11 - More CT Stuff
-            </a>
-        </h4>
-    </div>
-    <div id="graduateCollapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="graduateHeadingEleven">
-        <div class="panel-body">
-            <p><a href="graduate_slides/F21-DR11-More-CT-Stuff.pptx" target="_blank">PPT</a></p>
-            <p><a href="https://youtu.be/w_Y89ZtwD-E" target="_blank">Video</a></p>
-            <p><a href="#" target="_blank">HW</a></p>
-        </div>
-    </div>
-</div>
-
-<div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="graduateHeadingTwelve">
-        <h4 class="panel-title">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGraduate" href="#graduateCollapseTwelve" aria-expanded="false" aria-controls="graduateCollapseTwelve">
-                Lecture 12 - MRI Physics
-            </a>
-        </h4>
-    </div>
-    <div id="graduateCollapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="graduateHeadingTwelve">
-        <div class="panel-body">
-            <p><a href="graduate_slides/F21-DR12-MRI-Phys.pptx" target="_blank">PPT</a></p>
-            <p><a href="https://youtu.be/HXCDbYPN-OI" target="_blank">Video</a></p>
-            <p><a href="#" target="_blank">HW</a></p>
-        </div>
-    </div>
-</div>
-
-<div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="graduateHeadingThirteen">
-        <h4 class="panel-title">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGraduate" href="#graduateCollapseThirteen" aria-expanded="false" aria-controls="graduateCollapseThirteen">
-                Lecture 13 - Spin-Echo
-            </a>
-        </h4>
-    </div>
-    <div id="graduateCollapseThirteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="graduateHeadingThirteen">
-        <div class="panel-body">
-            <p><a href="graduate_slides/F21-DR13-Spin-Echo.pptx" target="_blank">PPT</a></p>
-            <p><a href="https://youtu.be/8iqkstc81so" target="_blank">Video</a></p>
-            <p><a href="#" target="_blank">HW</a></p>
-        </div>
-    </div>
-</div>
-
-<div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="graduateHeadingFourteen">
-        <h4 class="panel-title">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGraduate" href="#graduateCollapseFourteen" aria-expanded="false" aria-controls="graduateCollapseFourteen">
-                Lecture 14 - K-Space
-            </a>
-        </h4>
-    </div>
-    <div id="graduateCollapseFourteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="graduateHeadingFourteen">
-        <div class="panel-body">
-            <p><a href="graduate_slides/F21-DR14-K-Space.pptx" target="_blank">PPT</a></p>
-            <p><a href="https://youtu.be/juYhS2l1DEQ" target="_blank">Video</a></p>
-            <p><a href="#" target="_blank">HW</a></p>
-        </div>
-    </div>
-</div>
-
-
-<div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="graduateHeadingFifteen">
-        <h4 class="panel-title">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGraduate" href="#graduateCollapseFifteen" aria-expanded="false" aria-controls="graduateCollapseFifteen">
-                Lecture 15 - More MRI Stuff
-            </a>
-        </h4>
-    </div>
-    <div id="graduateCollapseFifteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="graduateHeadingFifteen">
-        <div class="panel-body">
-            <p><a href="graduate_slides/F21-DR15-MRI-More.pptx" target="_blank">PPT</a></p>
-            <p><a href="https://youtu.be/V8f6SB5Jbq4" target="_blank">Video</a></p>
-            <p><a href="#" target="_blank">HW</a></p>
-        </div>
-    </div>
-</div>
-
-<div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="graduateHeadingSixteen">
-        <h4 class="panel-title">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGraduate" href="#graduateCollapseSixteen" aria-expanded="false" aria-controls="graduateCollapseSixteen">
-                Lecture 16 - Midterm Review (Not Exclusive)
-            </a>
-        </h4>
-    </div>
-    <div id="graduateCollapseSixteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="graduateHeadingSixteen">
-        <div class="panel-body">
-            <p><a href="graduate_slides/F21-DR16-Midterm-Review.pptx" target="_blank">PPT</a></p>
-            <p><a href="https://youtu.be/Zd7pbJRb-Lg" target="_blank">Video</a></p>
-            <p><a href="#" target="_blank">HW</a></p>
-        </div>
-    </div>
-</div>
-
-<div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="graduateHeadingSeventeen">
-        <h4 class="panel-title">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGraduate" href="#graduateCollapseSeventeen" aria-expanded="false" aria-controls="graduateCollapseSeventeen">
-                Lecture 17 - Idea on Sparsity
-            </a>
-        </h4>
-    </div>
-    <div id="graduateCollapseSeventeen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="graduateHeadingSeventeen">
-        <div class="panel-body">
-            <p><a href="graduate_slides/F21-DR17-Sparsity.pptx" target="_blank">PPT</a></p>
-            <p><a href="https://youtu.be/ERrMVT_mCuc" target="_blank">Video</a></p>
-            <p><a href="#" target="_blank">HW</a></p>
-        </div>
-    </div>
-</div>
-
-<div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="graduateHeadingEighteen">
-        <h4 class="panel-title">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGraduate" href="#graduateCollapseEighteen" aria-expanded="false" aria-controls="graduateCollapseEighteen">
-                Lecture 18 - Last MRI Piece
-            </a>
-        </h4>
-    </div>
-    <div id="graduateCollapseEighteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="graduateHeadingEighteen">
-        <div class="panel-body">
-            <p><a href="graduate_slides/F21-DR18-Last.pptx" target="_blank">PPT</a></p>
-            <p><a href="https://youtu.be/457nz6x-EyA" target="_blank">Video</a></p>
-            <p><a href="#" target="_blank">HW</a></p>
-        </div>
-    </div>
-</div>
-
-<div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="graduateHeadingNineteen">
-        <h4 class="panel-title">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGraduate" href="#graduateCollapseNineteen" aria-expanded="false" aria-controls="graduateCollapseNineteen">
-                Lecture 19 - Nuclear Physics
-            </a>
-        </h4>
-    </div>
-    <div id="graduateCollapseNineteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="graduateHeadingNineteen">
-        <div class="panel-body">
-            <p><a href="graduate_slides/F21-DR19-Nuclear-Phys.pptx" target="_blank">PPT</a></p>
-            <p><a href="https://youtu.be/bk1qVmZXESc" target="_blank">Video</a></p>
-            <p><a href="#" target="_blank">HW</a></p>
-        </div>
-    </div>
-</div>
-
-<div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="graduateHeadingTwenty">
-        <h4 class="panel-title">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGraduate" href="#graduateCollapseTwenty" aria-expanded="false" aria-controls="graduateCollapseTwenty">
-                Lecture 20 - Nuclear Imaging
-            </a>
-        </h4>
-    </div>
-    <div id="graduateCollapseTwenty" class="panel-collapse collapse" role="tabpanel" aria-labelledby="graduateHeadingTwenty">
-        <div class="panel-body">
-            <p><a href="graduate_slides/F21-DR20-Nuclear-Imaging.pptx" target="_blank">PPT</a></p>
-            <p><a href="https://youtu.be/a1HNHRaB-gE" target="_blank">Video</a></p>
-            <p><a href="#" target="_blank">HW</a></p>
-        </div>
-    </div>
-</div>
-
- <!-- Additional lectures can be added here -->
-
-
-
-
-                        </div>
-
-                       
                     </div>
                 </div>
             </div>
@@ -1089,27 +267,29 @@
         </div>
     </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">About</a> |
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Contact</a>
+            </div>
+            <p>&copy; 2023 Biomedical Instrumentation and Imaging</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <!-- Script for filtering lectures -->
     <script>
-        function showLectures(level) {
-            const undergradLectures = document.querySelectorAll('.undergraduate');
-            const gradLectures = document.querySelectorAll('.graduate');
-
-            if (level === 'undergraduate') {
-                undergradLectures.forEach(lecture => lecture.style.display = 'block');
-                gradLectures.forEach(lecture => lecture.style.display = 'none');
-            } else if (level === 'graduate') {
-                undergradLectures.forEach(lecture => lecture.style.display = 'none');
-                gradLectures.forEach(lecture => lecture.style.display = 'block');
-            }
+        function showLectures(type) {
+            $('.panel').hide();  // Hide all panels
+            $('.' + type).show();  // Show panels of the selected type
         }
-
-        // Default to showing undergraduate lectures
-        showLectures('undergraduate');
     </script>
+
 </body>
 
 </html>
